@@ -4,51 +4,59 @@
     box-sizing: border-box;
 }
 
+/* Background of whole page */
 body {
     background: #f5ecea;
     font-family: "Playfair Display", serif;
 }
 
-/* Header with background image */
+/* HEADER WITH YOUR IMAGE */
 .hero-header {
-    background-image: url("your-bg-image.png"); /* <-- put your image */
+    background-image: url("bg.png"); /* <-- replace with your actual filename */
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top center;
+
     width: 100%;
-    height: 260px; /* adjust based on your design height */
-    padding: 20px 40px;
+    height: 280px; /* Adjust depending on your image height */
     display: flex;
     align-items: center;
+    padding: 20px 60px;
 }
 
-/* Content inside header */
-.header-content {
+/* FLEX layout of inside content */
+.header-inner {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
-/* Logo */
+/* LOGO */
 .logo img {
-    width: 150px; /* adjust if needed */
+    width: 150px; /* Change if needed */
 }
 
-/* Nav menu */
+/* NAVIGATION MENU */
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 60px;
+    gap: 70px;
+    list-style: none;
 }
 
 nav a {
     text-decoration: none;
     font-family: "Great Vibes", cursive;
     font-size: 28px;
-    color: #6a3c3c;
+    color: #6A3C3C;
+    transition: 0.3s;
 }
 
-/* Icons */
+nav a:hover {
+    color: #8b5b5b;
+}
+
+/* RIGHT-SIDE ICONS */
 .icons {
     display: flex;
     gap: 25px;
